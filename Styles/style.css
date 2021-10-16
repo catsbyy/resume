@@ -1,0 +1,482 @@
+/* Фон и шрифт страницы*/
+body {
+  background-color: rgba(100, 140, 244, 0.25);
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+/* Блок с резюме */
+.resume-section {
+  max-width: 1200px;
+  align-content: center;
+  height: auto;
+  margin: 10% auto;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+}
+
+.resume-section:hover {
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.25);
+}
+
+.resume-section table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.resume-section table td {
+  vertical-align: top;
+}
+
+.main-table td + .main-table td {
+  float: left;
+  padding-left: 0;
+}
+
+/* Стили блока с контактами */
+.contacts {
+  width: 366px;
+  height: 1210px;
+  margin: 45px 40px 45px 50px;
+  background: #648cf4;
+}
+
+.contacts ul {
+  list-style: none;
+  color: white;
+  font-size: 20px;
+  padding: 0;
+  margin-left: 1em;
+}
+
+.contacts ul li {
+  margin-bottom: 1rem;
+}
+
+.contacts ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.contacts img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-images {
+  max-height: 24px;
+  max-width: 24px;
+  margin-right: 5px;
+  position: relative;
+  top: 4px;
+}
+
+/* Стили блока "Я могу" */
+.can-section h3 {
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.can-section ul {
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+  margin-left: 2rem;
+}
+
+.can-section li {
+  margin-bottom: 1rem;
+}
+
+.can-section li a {
+  text-decoration: none;
+
+  color: white;
+}
+
+/* Имя, должность и описание */
+.name-section {
+  margin-top: 4rem;
+}
+
+.name-section h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.name-section h2 {
+  font-size: 28px;
+  color: #648cf4;
+  margin-top: 0;
+}
+
+.name-section p {
+  color: #282a30;
+  font-size: 20px;
+  align-items: center;
+  margin-bottom: 0;
+  margin-right: 25px;
+}
+
+/* Стили блока с подробностями */
+.details-section ul {
+  margin-bottom: 0;
+}
+.details-section table {
+  width: 100%;
+  border-spacing: 0;
+  padding: 5;
+}
+
+#details-first-column {
+  padding-right: 30px;
+}
+.details-section h3 {
+  font-size: 28px;
+  align-items: center;
+  color: #648cf4;
+  margin-bottom: 0;
+  margin-top: 24px;
+}
+
+.details-section ul {
+  margin-top: 5px;
+}
+
+/* Секция "Образование" */
+
+.education-section {
+  margin-right: 20px;
+}
+
+.education-section h4 {
+  color: #282a30;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+.education-section ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.education-section ul li {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.education-section ul li:before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -20px;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  border: 2px solid #648cf4;
+}
+.education-section ul li:after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: -15px;
+  height: calc(100% - 7px);
+  width: 2px;
+  background: #648cf4;
+}
+
+.education-section ul li:last-child::after {
+  display: none;
+}
+
+.university-name {
+  color: #282a30;
+  opacity: 0.5;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+.university-dates {
+  color: #648cf4;
+  opacity: 0.75;
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Секция "Сертификаты" */
+.certificates-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.certificates-section ul li {
+  margin-bottom: 1rem;
+}
+
+.certificates-section h4 {
+  color: #282a30;
+  font-size: 20px;
+  margin: 0;
+}
+
+.certificates-section p {
+  color: #282a30;
+  opacity: 0.5;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Секция "Навыки" */
+.skills-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-section li {
+  background: #648cf4;
+  opacity: 0.75;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  font-size: 18px;
+}
+
+/* Секция "Проекты" */
+.pet-project-section h4 {
+  color: #282a30;
+  font-size: 20px;
+  margin: 0;
+}
+
+.pet-project-section ul {
+  color: #648cf4;
+  margin: 0 0 0 0;
+}
+
+.pet-project-section ul li {
+  color: #949598;
+  font-size: 18px;
+  margin: 0;
+  position: relative;
+}
+.pet-project-section ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -16px;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  border: 2px solid #648cf4;
+}
+
+.pet-project-section ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+/* Секция "Языки" */
+.languages-section ul {
+  list-style: none;
+  padding-left: 0;
+  column-count: 2;
+}
+
+.languages-section ul li {
+  margin-bottom: 1rem;
+}
+.languages-section ul li:nth-child(2n) {
+  margin-bottom: 0;
+}
+
+.languages-section h4 {
+  color: #282a30;
+  font-size: 20px;
+  margin: 0;
+}
+
+.languages-section p {
+  color: #282a30;
+  opacity: 0.5;
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Секция "Интересы" */
+.interests-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.interests-section li {
+  margin-bottom: 1rem;
+  border-color: rgba(100, 140, 244, 0.75);
+  color: #282a30;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 0px 8px 4px 8px;
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  font-size: 18px;
+}
+
+.interests-section img {
+  max-height: 25px;
+  max-width: 25px;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 4px;
+}
+
+@media (max-width: 1200px) {
+  .resume-section {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-table,
+  .main-table tbody {
+    display: block;
+  }
+  .main-table tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background: #648cf4;
+    text-align: center;
+  }
+  .contacts .profile-picture {
+    display: block;
+    height: 280px;
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+  .contacts ul {
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+  .contact-images {
+    max-height: 20px;
+    max-width: 20px;
+  }
+  .can-section h3 {
+    margin: 0 0 0.5rem;
+    font-size: 24px;
+  }
+  .can-section ul {
+    font-size: 18px;
+  }
+  .main-table td {
+    padding: 10px;
+  }
+  .main-table td + .main-table td {
+    padding: 10px;
+  }
+  .name-section {
+    margin: 0;
+    text-align: center;
+  }
+  .name-section h1 {
+    font-size: 40px;
+  }
+  .name-section h2 {
+    font-size: 20px;
+  }
+  .name-section p {
+    font-size: 18px;
+    margin: 0;
+  }
+  .details-section h3 {
+    font-size: 24px;
+    margin-top: 24px;
+    text-align: center;
+  }
+  .details-section h4 {
+    font-size: 18px;
+  }
+  #details-first-column,
+  #details-second-column {
+    padding: 0;
+  }
+  .education-section {
+    margin: 0;
+  }
+
+  .university-name {
+    font-size: 18px;
+  }
+  .university-dates {
+    font-size: 18px;
+  }
+  .certificates-section {
+    text-align: center;
+  }
+ 
+  .certificates-section p {
+    font-size: 14px;
+  }
+  .skills-section {
+    text-align: center;
+  }
+  .skills-section li {
+    background: #648cf4;
+    opacity: 0.75;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    font-size: 16px;
+}
+.pet-project-section h4 {
+  text-align: center;
+}
+.languages-section ul {
+  text-align: center;
+}
+.languages-section ul li:nth-child(n) {
+  margin-bottom: 8px;
+}
+.pet-project-section li {
+  font-size: 16px;
+}
+.pet-project-section ul {
+  margin: auto;
+  width: 80%;
+}
+.interests-section li {
+  font-size: 16px;
+}
+.interests-section ul {
+  text-align: center;
+}
+  .resume-section {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .resume-section {
+    max-width: none;
+  }
+}
