@@ -343,6 +343,9 @@ h4 {
   .resume-section {
     max-width: 970px;
   }
+  .contacts {
+    height: 1650px;
+  }
 }
 
 @media (max-width: 992px) {
